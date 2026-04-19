@@ -1,0 +1,51 @@
+data,descrizione,categoria,importo
+2024-01-01,Stipendio,Entrate,1800.00
+2024-01-02,Affitto Gennaio,Casa,-550.00
+2024-01-03,Spesa Settimanale,Cibo,-65.40
+2024-01-05,Cena Fuori,Cibo,-35.00
+2024-01-08,Abbonamento Treno,Trasporti,-45.00
+2024-01-10,Netflix,Intrattenimento,-12.99
+2024-01-12,Aperitivo,Cibo,-15.00
+2024-01-15,Benzina,Trasporti,-50.00
+2024-01-18,Visita Dentista,Salute,-80.00
+2024-01-20,Spesa Esselunga,Cibo,-42.30
+2024-01-25,Cinema,Intrattenimento,-10.50
+2024-01-28,Pizza Sabato,Cibo,-22.00
+2024-02-01,Stipendio,Entrate,1800.00
+2024-02-02,Affitto Febbraio,Casa,-550.00
+2024-02-04,Ristorante Indiano,Cibo,-28.00
+2024-02-07,Assicurazione Auto,Trasporti,-120.00
+2024-02-10,Palestra,Salute,-45.00
+2024-02-12,Spesa Bio,Cibo,-55.20
+2024-02-14,Regalo S.Valentino,Intrattenimento,-40.00
+2024-02-15,Benzina,Trasporti,-50.00
+2024-02-18,Amazon Elettronica,Casa,-35.50
+2024-02-22,Sushi,Cibo,-32.00
+2024-02-25,Concerto,Intrattenimento,-55.00
+2024-02-27,Farmacia,Salute,-18.40
+2024-03-01,Stipendio,Entrate,1800.00
+2024-03-02,Affitto Marzo,Casa,-550.00
+2024-03-03,Vendita Usato,Entrate,50.00
+2024-03-05,Tagliando Auto,Trasporti,-210.00
+2024-03-08,Spesa Lidl,Cibo,-38.90
+2024-03-10,Spotify,Intrattenimento,-9.99
+2024-03-12,Pranzo Lavoro,Cibo,-12.50
+2024-03-15,Benzina,Trasporti,-50.00
+2024-03-18,Visita Oculistica,Salute,-100.00
+2024-03-20,Bolletta Luce,Casa,-92.40
+2024-03-22,Mc Donalds,Cibo,-14.20
+2024-03-25,Libri Professionali,Intrattenimento,-45.00
+2024-03-28,Apericena,Cibo,-20.00
+2024-04-01,Stipendio,Entrate,1800.00
+2024-04-02,Affitto Aprile,Casa,-550.00
+2024-04-04,Spesa Coop,Cibo,-70.15
+2024-04-07,Volo Weekend,Trasporti,-115.00
+2024-04-10,Teatro,Intrattenimento,-30.00
+2024-04-12,Integratori,Salute,-25.00
+2024-04-15,Benzina,Trasporti,-50.00
+2024-04-18,Manutenzione Caldaia,Casa,-80.00
+2024-04-20,Cena Pesce,Cibo,-60.00
+2024-04-22,Ricarica Cellulare,Trasporti,-10.00
+2024-04-25,Uscita Fuori Porta,Intrattenimento,-25.50
+2024-04-27,Supermercato,Cibo,-48.00
+2024-04-30,Bonus Aziendale,Entrate,200.00
