@@ -45,14 +45,15 @@ def main():
                 totals_expanses = monthly_data[monthly_data['importo'] < 0]
                 Super_Total = totals_expanses['importo'].abs().sum()
                 print(Super_Total)
-                category_distribution = totals_expanses.groupby('categoria')['importo'].sum().abs()
-                partial_percentage = (category_distribution/Super_Total)*100
+                category_expanses = totals_expanses.groupby('categoria')['importo'].sum().abs()
+                #calculate all the category percentage
+                category_percentage = (category_expanses/Super_Total)*100
 
                 print("\nTotals by Category:")
-                print(partial_percentage)
+                print(category_percentage)
                 
                 # Visualizing the data
-                partial_percentage.plot(kind='pie',autopct='%1.1f%%',startangle=140)
+                category_percentage.plot(kind='pie',autopct='%1.1f%%',startangle=140)
                 plt.title(f"Expenses_Percentage for {month_year}", pad=30)
                 plt.ylabel('')       
                 plt.axis('equal')
@@ -67,9 +68,30 @@ def main():
             if range_data.empty:
                 print("No data found in this range.")
             else:
+                expense_period = range_data[range_data['importo'] < 0]
+                expense_period =expense_period['importo'].abs().sum()
+                income_period = range_data[range_data['importo'] > 0]
+                income_period = income_period['importo'].sum()
+
+                #Data Visualization
+                plot_data = pd.Series(
+                [expense_period, income_period], 
+                index=['Income', 'Expense']
+                )
+                plot_data.plot(kind='bar', color=['green', 'red'])
+
+                
+                plt.title(f"Income vs. Expense Comparison between({start} - {end})", pad=20)
+                plt.ylabel("amount (€)")
+                plt.xticks(rotation=0) # 
+                plt.tight_layout()
+                plt.show()
+                #print report
                 print(f"\nReport from {start} to {end}:")
                 print(range_data)
                 print(f"\nTotal Balance: {range_data['importo'].sum():.2f}€")
+
+                
 
         elif choice == "3":
             # Advanced stats: Percentage of spending by category

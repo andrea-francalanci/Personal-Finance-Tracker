@@ -6,7 +6,7 @@ A dual-mode Python application to manage and analyze personal expenses. This pro
 - **Standard Mode**: Efficient transaction management using built-in modules (`csv`, `datetime`). 
 - **Advanced Mode**: Professional data analysis and visualization with `Pandas` and `Matplotlib`.
 - **Data Persistence**: All information is securely stored in a local CSV database.
-- **Reporting**: Generate text-based reports or visual bar charts of your spending habits.
+- **Reporting**: Generate text-based reports or visual charts of your spending habits.
 
 ## 🛠️ Technologies
 - **Python 3.12**
@@ -21,3 +21,4 @@ This project uses `uv` for dependency management.
    ```bash
    git clone <your-repository-link>
    cd PersonalFinanceTracker
+   uv sync
