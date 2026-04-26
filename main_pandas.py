@@ -42,15 +42,21 @@ def main():
             if monthly_data.empty:
                 print(f"No data found for: {month_year}")
             else:
-                totals = get_category_totals(monthly_data)
+                totals_expanses = monthly_data[monthly_data['importo'] < 0]
+                Super_Total = totals_expanses['importo'].abs().sum()
+                print(Super_Total)
+                category_distribution = totals_expanses.groupby('categoria')['importo'].sum().abs()
+                partial_percentage = (category_distribution/Super_Total)*100
+
                 print("\nTotals by Category:")
-                print(totals)
+                print(partial_percentage)
                 
                 # Visualizing the data
-                totals.plot(kind='bar', title=f"Expenses/Income for {month_year}", color='skyblue')
-                plt.ylabel("Amount (€)")
-                plt.xticks(rotation=45)
-                plt.tight_layout()
+                partial_percentage.plot(kind='pie',autopct='%1.1f%%',startangle=140)
+                plt.title(f"Expenses_Percentage for {month_year}", pad=30)
+                plt.ylabel('')       
+                plt.axis('equal')
+                plt.tight_layout()    
                 plt.show()
 
         elif choice == "2":
