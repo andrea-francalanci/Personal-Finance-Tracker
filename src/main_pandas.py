@@ -43,12 +43,12 @@ def main():
             if monthly_data.empty:
                 print(f"No data found for: {month_year}")
             else:
-                totals_expanses = monthly_data[monthly_data['importo'] < 0]
-                Super_Total = totals_expanses['importo'].abs().sum()
-                print(Super_Total)
-                category_expanses = totals_expanses.groupby('categoria')['importo'].sum().abs()
+                totals_expenses = monthly_data[monthly_data['importo'] < 0]
+                super_Total = totals_expenses['importo'].abs().sum()
+                print(super_Total)
+                category_expenses = totals_expenses.groupby('categoria')['importo'].sum().abs()
                 #calculate all the category percentage
-                category_percentage = (category_expanses/Super_Total)*100
+                category_percentage = (category_expenses/super_Total)*100
 
                 print("\nTotals by Category:")
                 print(category_percentage)

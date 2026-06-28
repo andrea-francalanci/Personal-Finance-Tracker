@@ -1,7 +1,7 @@
 import csv
 from datetime import datetime
 
-DATABASE_FILE = "finanze.csv"
+DATABASE_FILE = "data/raw/finanze.csv"
 
 def load_transactions(file_path):
     """Loads transactions from CSV and converts types."""
