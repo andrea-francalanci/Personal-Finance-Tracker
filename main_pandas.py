@@ -72,13 +72,14 @@ def main():
                 expense_period =expense_period['importo'].abs().sum()
                 income_period = range_data[range_data['importo'] > 0]
                 income_period = income_period['importo'].sum()
+                
 
                 #Data Visualization
                 plot_data = pd.Series(
                 [expense_period, income_period], 
-                index=['Income', 'Expense']
+                index=['Expense', 'Income']
                 )
-                plot_data.plot(kind='bar', color=['green', 'red'])
+                plot_data.plot(kind='bar', color=['red', 'green'])
 
                 
                 plt.title(f"Income vs. Expense Comparison between({start} - {end})", pad=20)
