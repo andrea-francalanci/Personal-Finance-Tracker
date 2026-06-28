@@ -18,3 +18,11 @@ An interactive, data-driven web application designed to track, filter, and visua
 - **Data Visualization:** Matplotlib
 - **Web Framework:** Streamlit
 - **Environment Management:** `uv` (Fast Python package installer and resolver)
+
+## 📦 Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/andrea-francalanci/Personal-Finance-Tracker.git](https://github.com/andrea-francalanci/Personal-Finance-Tracker.git)
+   cd Personal-Finance-Tracker
+2.uv run streamlit run src/app.py
