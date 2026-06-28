@@ -1,7 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import streamlit as st
 
-DATABASE_PATH = "finanze.csv"
+DATABASE_PATH = "data/raw/finanze.csv"
 
 def show_menu():
     """Displays the menu for the Pandas version."""
