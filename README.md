@@ -1,24 +1,20 @@
-# Personal Finance Tracker
+Markdown
+# 📊 Personal Finance Tracker 3.0
 
-A dual-mode Python application to manage and analyze personal expenses. This project demonstrates both the use of Python's **Standard Library** and advanced data manipulation with **Pandas**.
+An interactive, data-driven web application designed to track, filter, and visualize personal income and expenses. This project evolved from a standard Python command-line utility into an advanced data analytics dashboard leveraging **Pandas** and **Streamlit**.
 
-## 🚀 Features
-- **Standard Mode**: Efficient transaction management using built-in modules (`csv`, `datetime`). 
-- **Advanced Mode**: Professional data analysis and visualization with `Pandas` and `Matplotlib`.
-- **Data Persistence**: All information is securely stored in a local CSV database.
-- **Reporting**: Generate text-based reports or visual charts of your spending habits.
+## 🚀 Key Features
 
-## 🛠️ Technologies
-- **Python 3.12**
-- **uv**: Next-generation Python package installer and resolver.
-- **Pandas**: For high-performance data manipulation.
-- **Matplotlib**: For data visualization.
+- **Interactive Navigation:** Sidebar-driven web interface replacing legacy terminal menus.
+- **Monthly Insights:** Filter data by month to instantly calculate total expenses and view a clear distribution percentage breakdown.
+- **Dynamic Data Visualization:** High-quality charts including expense pie charts and income vs. expenses bar charts using **Matplotlib**.
+- **Flexible Date Range Analysis:** Custom start and end date pickers to safely monitor net balances over specific periods.
+- **Robust Architecture:** Structured codebase with dedicated source, configuration, and data layers.
 
-## 📦 Installation & Setup
-This project uses `uv` for dependency management.
+## 🛠️ Tech Stack & Tools
 
-1. **Clone the repository**:
-   ```bash
-   git clone <your-repository-link>
-   cd PersonalFinanceTracker
-   uv sync
+- **Language:** Python 3.12+
+- **Data Analysis:** Pandas
+- **Data Visualization:** Matplotlib
+- **Web Framework:** Streamlit
+- **Environment Management:** `uv` (Fast Python package installer and resolver)
